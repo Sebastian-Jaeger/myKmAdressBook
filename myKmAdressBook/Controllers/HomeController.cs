@@ -1,4 +1,5 @@
-﻿using System;
+﻿using myKmAdressBook.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,8 +9,11 @@ namespace myKmAdressBook.Controllers
 {
     public class HomeController : Controller
     {
+        private MyDbContext db = new MyDbContext(); 
+
         public ActionResult Index()
         {
+
             return View();
         }
 

@@ -91,6 +91,8 @@ C:\dev\myKmAdressBook\myKmAdressBook\bin\Microsoft.Owin.Security.OAuth.xml
 C:\dev\myKmAdressBook\myKmAdressBook\bin\Microsoft.Owin.Security.Google.xml
 C:\dev\myKmAdressBook\myKmAdressBook\bin\Microsoft.Owin.Security.Twitter.xml
 C:\dev\myKmAdressBook\myKmAdressBook\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
-C:\dev\myKmAdressBook\myKmAdressBook\obj\Debug\myKmAdressBook.csprojResolveAssemblyReference.cache
 C:\dev\myKmAdressBook\myKmAdressBook\obj\Debug\myKmAdressBook.dll
 C:\dev\myKmAdressBook\myKmAdressBook\obj\Debug\myKmAdressBook.pdb
+C:\dev\myKmAdressBook\myKmAdressBook\obj\Debug\myKmAdressBook.Migrations.init.resources
+C:\dev\myKmAdressBook\myKmAdressBook\obj\Debug\myKmAdressBook.csproj.GenerateResource.Cache
+C:\dev\myKmAdressBook\myKmAdressBook\obj\Debug\myKmAdressBook.csprojResolveAssemblyReference.cache

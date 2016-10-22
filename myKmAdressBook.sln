@@ -5,8 +5,6 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "myKmAdressBook", "myKmAdressBook\myKmAdressBook.csproj", "{7F1FEB52-6426-4291-B54A-6839D743AA26}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "myKmAdressBook.Tests", "myKmAdressBook.Tests\myKmAdressBook.Tests.csproj", "{2FF20B15-8570-4F41-9D09-1D198ED60721}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,10 +15,6 @@ Global
 		{7F1FEB52-6426-4291-B54A-6839D743AA26}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7F1FEB52-6426-4291-B54A-6839D743AA26}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7F1FEB52-6426-4291-B54A-6839D743AA26}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2FF20B15-8570-4F41-9D09-1D198ED60721}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2FF20B15-8570-4F41-9D09-1D198ED60721}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2FF20B15-8570-4F41-9D09-1D198ED60721}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2FF20B15-8570-4F41-9D09-1D198ED60721}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

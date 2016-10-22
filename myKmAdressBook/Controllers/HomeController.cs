@@ -9,8 +9,6 @@ namespace myKmAdressBook.Controllers
 {
     public class HomeController : Controller
     {
-        private MyDbContext db = new MyDbContext(); 
-
         public ActionResult Index()
         {
 

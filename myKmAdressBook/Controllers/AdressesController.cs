@@ -22,7 +22,7 @@ namespace myKmAdressBook.Controllers
             var csvList = converter.GetAdressData();
             var dbList = db.AdressList.ToList();
 
-            return View(csvList);
+            return View(dbList);
         }
 
         // GET: Adresses/Details/5
@@ -46,23 +46,6 @@ namespace myKmAdressBook.Controllers
             return View();
         }
 
-        // POST: Adresses/Create
-        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
-        // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,CustumerId,Name,Postcode,City,Country,Street")] Adress adress)
-        {
-            if (ModelState.IsValid)
-            {
-                db.AdressList.Add(adress);
-                db.SaveChanges();
-                return RedirectToAction("Index");
-            }
-
-            return View(adress);
-        }
-
         // GET: Adresses/Edit/5
         public ActionResult Edit(int? id)
         {
@@ -74,22 +57,6 @@ namespace myKmAdressBook.Controllers
             if (adress == null)
             {
                 return HttpNotFound();
-            }
-            return View(adress);
-        }
-
-        // POST: Adresses/Edit/5
-        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
-        // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "Id,CustumerId,Name,Postcode,City,Country,Street")] Adress adress)
-        {
-            if (ModelState.IsValid)
-            {
-                db.Entry(adress).State = EntityState.Modified;
-                db.SaveChanges();
-                return RedirectToAction("Index");
             }
             return View(adress);
         }
@@ -107,17 +74,6 @@ namespace myKmAdressBook.Controllers
                 return HttpNotFound();
             }
             return View(adress);
-        }
-
-        // POST: Adresses/Delete/5
-        [HttpPost, ActionName("Delete")]
-        [ValidateAntiForgeryToken]
-        public ActionResult DeleteConfirmed(int id)
-        {
-            Adress adress = db.AdressList.Find(id);
-            db.AdressList.Remove(adress);
-            db.SaveChanges();
-            return RedirectToAction("Index");
         }
 
         protected override void Dispose(bool disposing)
